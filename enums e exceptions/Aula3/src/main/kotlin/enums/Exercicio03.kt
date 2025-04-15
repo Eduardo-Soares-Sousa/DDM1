@@ -1,20 +1,12 @@
 package enums
 
-enum class dangerLevel() {
-    BAIXO, MEDIO, ALTO;
+enum class dangerLevel(val msg: String) {
+    BAIXO("Tudo funcionando perfeitamente"), MEDIO("Cuidado! Monitore os níveis de radiação"), ALTO("Fujam para as colinas");
 
-    fun print() = println("(${BAIXO}, ${MEDIO}, ${ALTO})")
+    fun print() = println(msg)
 }
-
-fun getDangerLevel(level: dangerLevel): String =
-    when(level) {
-        dangerLevel.BAIXO -> "Tudo funcionando perfeitamente"
-        dangerLevel.MEDIO -> "Cuidado! Monitore os níveis de radiação"
-        dangerLevel.ALTO -> "Fujam para as colinas"
-    }
 
 fun main() {
     val nivel = dangerLevel.ALTO
     nivel.print()
-    println(nivel)
 }
