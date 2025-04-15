@@ -20,16 +20,6 @@ val Double.milesToKm: Double
 // Exercicio 3
 val Date.weekday: String
     get() {
-        val cal = Calendar.getInstance()
-        cal.time = this
-        return when (cal.get(Calendar.DAY_OF_WEEK)) {
-            Calendar.SUNDAY -> "Domingo"
-            Calendar.MONDAY -> "Segunda-feira"
-            Calendar.TUESDAY -> "Terça-feira"
-            Calendar.WEDNESDAY -> "Quarta-feira"
-            Calendar.THURSDAY -> "Quinta-feira"
-            Calendar.FRIDAY -> "Sexta-feira"
-            Calendar.SATURDAY -> "Sábado"
-            else -> throw IllegalStateException()
-        }
+        val date = SimpleDateFormat("EEEE")
+        return date.format(this)
     }
