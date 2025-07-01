@@ -4,7 +4,7 @@ import androidx.annotation.DrawableRes
 import com.user.appquiz.R
 import com.user.appquiz.model.Question
 
-class QuestionRepository {
+object QuestionRepository {
     val questionWithImage = listOf<Question>(
         Question(
             text = "Qual nação é essa bandeira?",
@@ -161,7 +161,7 @@ class QuestionRepository {
             text = "Qual dessas palavras está fora do padrão?",
             options = listOf("Casa", "Mesa", "Banana", "Pé-de-cabra"),
             answer = 2
-        ),
+        )
     )
 
     fun generateQuestions(): List<Question> {
