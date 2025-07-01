@@ -16,7 +16,7 @@ class ManageQuiz : ViewModel() {
     var highScore by mutableStateOf(0)
         private set
 
-    var gameStatus by mutableStateOf(GameState.IN_PROGESS)
+    var gameStatus by mutableStateOf(GameState.IN_PROGRESS)
         private set
 
     fun getCurrentQuestion(): Question {
@@ -30,7 +30,7 @@ class ManageQuiz : ViewModel() {
             highScore += 100
 
             if(currentQuestionIndex == questions.lastIndex) {
-                gameStatus = GameState.SUCESS
+                gameStatus = GameState.SUCCESS
             }else {
                 currentQuestionIndex++
             }
@@ -41,14 +41,14 @@ class ManageQuiz : ViewModel() {
 
     fun restart() {
         questions = QuestionRepository.generateQuestions()
-        gameStatus = GameState.IN_PROGESS
+        gameStatus = GameState.IN_PROGRESS
         currentQuestionIndex = 0
         highScore = 0
     }
 
     enum class GameState {
-        IN_PROGESS,
+        IN_PROGRESS,
         FAIL,
-        SUCESS
+        SUCCESS
     }
 }
