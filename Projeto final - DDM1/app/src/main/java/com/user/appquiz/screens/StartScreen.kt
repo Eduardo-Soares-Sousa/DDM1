@@ -27,7 +27,6 @@ fun StartScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFFEEEEEE))
             .padding(32.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -47,7 +46,11 @@ fun StartScreen(
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF4CAF50)),
             shape = RoundedCornerShape(50)
         ) {
-            Text("Começar Quiz", style = MaterialTheme.typography.bodyLarge, color = Color.White)
+            Text(
+                text = "Começar Quiz",
+                style = MaterialTheme.typography.bodyLarge,
+                color = Color.White
+            )
         }
 
         Button(
@@ -58,7 +61,11 @@ fun StartScreen(
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1976D2)),
             shape = RoundedCornerShape(50)
         ) {
-            Text("Como Jogar", style = MaterialTheme.typography.bodyLarge, color = Color.White)
+            Text(
+                text = "Como Jogar",
+                style = MaterialTheme.typography.bodyLarge,
+                color = Color.White
+            )
         }
 
         Button(
@@ -67,7 +74,11 @@ fun StartScreen(
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF9C27B0)),
             shape = RoundedCornerShape(50)
         ) {
-            Text("Créditos", style = MaterialTheme.typography.bodyLarge, color = Color.White)
+            Text(
+                text = "Créditos",
+                style = MaterialTheme.typography.bodyLarge,
+                color = Color.White
+            )
         }
     }
 }

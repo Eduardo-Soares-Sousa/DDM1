@@ -1,6 +1,5 @@
 package com.user.appquiz.repository
 
-import androidx.annotation.DrawableRes
 import com.user.appquiz.R
 import com.user.appquiz.model.Question
 
@@ -10,35 +9,35 @@ object QuestionRepository {
             text = "Qual nação é essa bandeira?",
             options = listOf("Argentina", "Império do Brasil", "Bolívia", "Chile"),
             answer = 1,
-            photo = R.drawable.bandeira_imperial_do_brasil
+            photo = R.drawable.flag_imperial_brazil
         ),
 
         Question(
             text = "Qual nação é essa bandeira?",
-            options = listOf("Argentina", "Império do Brasil", "Bolívia", "Chile"),
-            answer = 1,
-            photo = R.drawable.bandeira_imperial_do_brasil
+            options = listOf("Itália", "México", "África", "Peru"),
+            answer = 0,
+            photo = R.drawable.flag_of_italy
         ),
 
         Question(
             text = "Qual nação é essa bandeira?",
-            options = listOf("Argentina", "Império do Brasil", "Bolívia", "Chile"),
-            answer = 1,
-            photo = R.drawable.bandeira_imperial_do_brasil
+            options = listOf("Acre", "França", "Mongólia", "Vaticano"),
+            answer = 3,
+            photo = R.drawable.flag_of_vatican
         ),
 
         Question(
             text = "Qual nação é essa bandeira?",
-            options = listOf("Argentina", "Império do Brasil", "Bolívia", "Chile"),
-            answer = 1,
-            photo = R.drawable.bandeira_imperial_do_brasil
+            options = listOf("França", "Rússia", "Holanda", "Reino da Iugoslávia"),
+            answer = 2,
+            photo = R.drawable.flag_of_netherlands
         ),
 
         Question(
             text = "Qual nação é essa bandeira?",
-            options = listOf("Argentina", "Império do Brasil", "Bolívia", "Chile"),
+            options = listOf("Guiana Brasileira", "Portugal", "Devolvem nosso ouro", "Espanha"),
             answer = 1,
-            photo = R.drawable.bandeira_imperial_do_brasil
+            photo = R.drawable.flag_of_portugal
         )
     )
 

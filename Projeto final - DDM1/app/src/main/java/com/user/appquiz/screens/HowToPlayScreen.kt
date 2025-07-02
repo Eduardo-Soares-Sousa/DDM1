@@ -22,7 +22,6 @@ fun HowToPlayScreen(onBack: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFFF3E5F5))
             .padding(24.dp)
     ) {
         Text(
@@ -33,7 +32,9 @@ fun HowToPlayScreen(onBack: () -> Unit) {
         )
 
         Text(
-            text = "Responda corretamente as 10 perguntas para completar o desafio. A cada resposta certa, você ganha 100 pontos. Se errar, o jogo acaba!",
+            text = "Responda corretamente as 10 perguntas para completar o desafio. " +
+                    "A cada resposta certa, você ganha 100 pontos. Se errar, o jogo acaba! " +
+                    "E você recomeça tudo novamente. Então, tome cuidade e boa sorte! ;)",
             style = MaterialTheme.typography.bodyLarge
         )
 
@@ -44,7 +45,10 @@ fun HowToPlayScreen(onBack: () -> Unit) {
             shape = RoundedCornerShape(50),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF6A1B9A))
         ) {
-            Text("Voltar", color = Color.White)
+            Text(
+                text = "Voltar",
+                color = Color.White
+            )
         }
     }
 }

@@ -6,5 +6,6 @@ data class Question (
     val text: String,
     val options: List<String>,
     val answer: Int,
-    @DrawableRes val photo: Int ?= null
+    @DrawableRes
+    val photo: Int ?= null
 )

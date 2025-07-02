@@ -21,7 +21,6 @@ fun CreditsScreen(onBack: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFFE3F2FD))
             .padding(24.dp)
     ) {
         Text(
@@ -32,7 +31,12 @@ fun CreditsScreen(onBack: () -> Unit) {
         )
 
         Text(
-            text = "Desenvolvido por Eduardo e equipe\nCurso de Kotlin com Jetpack Compose\nProjeto Final - 2025",
+            text = "Desenvolvido por:" +
+                    "\n-Eduardo Soares de Sousa" +
+                    "\n-Joana Elias de Oliveira" +
+                    "\n-Victor Hugo Benetti Guilherme" +
+                    "\n-Vinicus Fazolaro Silva" +
+                    "\n\nDesenvolvimento Para Dispositivos Móveis - DDM1 - 2025",
             style = MaterialTheme.typography.bodyLarge
         )
 

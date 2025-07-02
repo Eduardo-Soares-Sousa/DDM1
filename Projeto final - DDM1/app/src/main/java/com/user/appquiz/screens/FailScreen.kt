@@ -27,7 +27,6 @@ fun FailScreen(onRestart: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFFFFEBEE))
             .padding(32.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -53,7 +52,9 @@ fun FailScreen(onRestart: () -> Unit) {
             shape = RoundedCornerShape(50),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1976D2))
         ) {
-            Text("Recomeçar", color = Color.White)
+            Text(
+                text = "Recomeçar",
+                color = Color.White)
         }
     }
 }

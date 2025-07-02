@@ -34,7 +34,7 @@ fun QuestionScreen(
 ) {
     val question = viewModel.getCurrentQuestion()
 
-    when (viewModel.gameStatus) {
+    when(viewModel.gameStatus) {
         ManageQuiz.GameState.FAIL -> onFail()
         ManageQuiz.GameState.SUCCESS -> onSuccess()
         ManageQuiz.GameState.IN_PROGRESS -> {

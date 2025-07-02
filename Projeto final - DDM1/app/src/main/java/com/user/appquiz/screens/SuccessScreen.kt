@@ -28,7 +28,6 @@ fun SuccessScreen(score: Int, onRestart: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFFE8F5E9))
             .padding(32.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -63,7 +62,10 @@ fun SuccessScreen(score: Int, onRestart: () -> Unit) {
             shape = RoundedCornerShape(50),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF4CAF50))
         ) {
-            Text("Recomeçar", color = Color.White)
+            Text(
+                text = "Recomeçar",
+                color = Color.White
+            )
         }
     }
 }
