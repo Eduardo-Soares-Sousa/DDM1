@@ -56,7 +56,7 @@ object QuestionRepository {
 
         Question(
             text = "Qual dessas palavras possui todas as letras da palavra 'QUIZ'?",
-            options = listOf("ZUQI", "QUIR", "UZIQ", "ZIQA"),
+            options = listOf("ZUQI", "QUIR", "UZJQ", "ZIQA"),
             answer = 0
         ),
 
