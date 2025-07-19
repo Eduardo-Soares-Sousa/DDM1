@@ -24,7 +24,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import com.user.appquiz.viewModel.ManageQuiz
+import com.user.appquiz.Controller.ManageQuiz
 
 @Composable
 fun QuestionScreen(

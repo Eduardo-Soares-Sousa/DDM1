@@ -1,11 +1,10 @@
 package com.user.appquiz.config
 
 import androidx.compose.runtime.Composable
-import androidx.lifecycle.ViewModel
 import com.user.appquiz.screens.CreditsScreen
 import com.user.appquiz.screens.FailScreen
 import com.user.appquiz.screens.HowToPlayScreen
-import com.user.appquiz.viewModel.ManageQuiz
+import com.user.appquiz.Controller.ManageQuiz
 import com.user.appquiz.screens.QuestionScreen
 import com.user.appquiz.screens.StartScreen
 import com.user.appquiz.screens.SuccessScreen

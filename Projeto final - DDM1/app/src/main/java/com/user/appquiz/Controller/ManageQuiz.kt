@@ -1,4 +1,4 @@
-package com.user.appquiz.viewModel
+package com.user.appquiz.Controller
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
